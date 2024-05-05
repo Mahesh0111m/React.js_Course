@@ -45,6 +45,7 @@
 
 .search{
     padding: 10px;
+    
 }
 
 .res-logo{
@@ -54,5 +55,35 @@
 }
 
 .filter-btn{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card{
+    padding: 5px;
+    width: 210px;
+    height: 290px;
+   margin: 5px;
+   background-color: rgb(233, 227, 227);
+
+}
+
+.login{
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.filter{
+    display: flex;
+    
+}
+
+.search-btn{
     margin: 5px;
 }
