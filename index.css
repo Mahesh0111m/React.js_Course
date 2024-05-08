@@ -87,3 +87,8 @@
 .search-btn{
     margin: 5px;
 }
+
+.user-card{
+    padding : 5px;
+    border: solid 1px black;
+}
