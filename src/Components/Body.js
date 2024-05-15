@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard , {withPromotedLabel} from "./RestaurantCard";
 import resList from "../utils/mockData";
 import { useState , useEffect} from "react";
 import Shimmer from "./Shimmer";
@@ -13,7 +13,7 @@ const Body =()=>{
     const [searchText,setsearchText] =useState("");
     const OnlineStatus = useOnlineStatus();
 
-
+    const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
     
 
     useEffect(()=>{
@@ -76,7 +76,13 @@ const Body =()=>{
             <div className="flex flex-wrap">
                {
                 filteredRestaurant.map((restaurant)=>{
-                    return <Link key={restaurant.info.id} to={"/restaurants/" + restaurant.info.id}> <RestaurantCard  resData={restaurant}/> </Link>
+                    return <Link key={restaurant.info.id}
+                     to={"/restaurants/" + restaurant.info.id}>
+
+                     {/**if restaurant is promoted we will add promoted label */}
+
+                     {restaurant.info.availability.opened ? (<RestaurantCardPromoted resData={restaurant}/>): <RestaurantCard  resData={restaurant}/> }
+                     </Link>
                 })
                }
             </div>

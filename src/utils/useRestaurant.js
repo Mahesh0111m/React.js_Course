@@ -16,7 +16,7 @@ const fetchMenu = async ()=>{
     
 
     const json = await data.json();
-    console.log(json.data);
+    
     setresInfo(json.data);
     
 }; 
