@@ -1,6 +1,5 @@
 Namaste React 🚀
 
-This is the React.js Course from Zero to Hero 🚀 by Akshay Saini Founder of NamasteDev.
 
 Topics Learnt :-
 
