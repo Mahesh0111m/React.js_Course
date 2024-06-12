@@ -11,7 +11,7 @@ useEffect(()=>{
 
 const fetchMenu = async ()=>{
     const data= await fetch(
-       MENU_URl +resId
+       MENU_URl + resId
     );
     
 
